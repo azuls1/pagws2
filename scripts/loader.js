@@ -16,7 +16,7 @@ function loadAssets() {
         if (currentAsset >= totalAssets) {
             clearInterval(interval);
             loadingText.textContent = "All assets loaded!";
-            loadingText.style.animation = 'bounce-once 0.6s ease-in-out';
+            loadingText.style.animation = 'bounce-up 0.6s ease-in-out';
             setTimeout(() => {
                 loadingScreen.style.opacity = 0;
                 setTimeout(() => {
@@ -24,7 +24,7 @@ function loadAssets() {
                 }, 1000);
             }, 1500);
         }
-    }, 300);
+    }, 100);
 }
 
 loadAssets();
