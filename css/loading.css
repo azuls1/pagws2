@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
+
 html, body {
     margin: 0;
     padding: 0;
@@ -25,35 +27,38 @@ html, body {
 }
 
 .loading-bar {
-    width: 90%;
+    width: 80%;
     max-width: 600px;
     height: 30px;
     background: black;
-    border: 2px solid #00ff7f;
+    border: 3px solid #00ff7f;
     border-radius: 15px;
     overflow: hidden;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .loading-fill {
     height: 100%;
     width: 0%;
     background: white;
-    transition: width 0.2s ease-in-out;
+    transition: width 0.1s ease-in-out;
 }
 
 .loading-text {
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: 500;
     font-family: 'Parkinsans', sans-serif;
     color: white;
 }
 
-@keyframes bounce-once {
-    0%, 100% {
+@keyframes bounce-up {
+    0% {
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-20px);
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
     }
 }
